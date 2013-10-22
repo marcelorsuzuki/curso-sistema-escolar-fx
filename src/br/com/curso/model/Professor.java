@@ -5,27 +5,43 @@ package br.com.curso.model;
  */
 public class Professor {
 	
-	private String cpf;
 	private String nome;
-	private Contato contato;
+	private String usuario;
+	private String senha;
+	private Disciplina disciplina;
 	
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
+	
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Contato getContato() {
-		return contato;
+	public String getUsuario() {
+		return usuario;
 	}
-	public void setContato(Contato contato) {
-		this.contato = contato;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	
+	public Disciplina getDisciplina() {
+		return disciplina;
+	}
+	public void setDisciplina(Disciplina disciplina) {
+		this.disciplina = disciplina;
+	}
+	public String getNomeDisciplina() {
+		return disciplina.getNome();
+	}
+	public void setNomeDisciplina(String nomeDisciplina) {
+		this.disciplina.setNome(nomeDisciplina);
 	}
 	
 	

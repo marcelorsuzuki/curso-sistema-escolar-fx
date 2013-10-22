@@ -18,7 +18,6 @@ public class Aluno {
     private int numero;
     private List <Disciplina> disciplinas;
     private Endereco endereco;
-    private Contato contato;
     private Classe classe;
     
     
@@ -99,14 +98,6 @@ public class Aluno {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
-    }
-
-    public Contato getContato() {
-        return contato;
-    }
-
-    public void setContato(Contato contato) {
-        this.contato = contato;
     }
 
     public Classe getClasse() {
