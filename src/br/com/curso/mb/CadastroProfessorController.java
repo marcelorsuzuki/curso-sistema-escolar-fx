@@ -30,11 +30,18 @@ public class CadastroProfessorController {
     	d.setNome(disciplina.getText());
     	p.setDisciplina(d);
     	StageGeneric s = getStage();
-    	ObservableList<Professor> data = s.getData();
+    	ObservableList<Professor> data = getTableProfessor();
     	data.add(p);
 
     	s.close();
 	}
+	
+	
+	private ObservableList<Professor> getTableProfessor() { 
+        StageGeneric stage =  getStage(); 
+        ListaProfessorController controller = (ListaProfessorController) stage.getPreviousController(); 
+        return controller.getData(); 
+	} 	
 	
 	private StageGeneric getStage() {
 		return (StageGeneric) root.getScene().getWindow();

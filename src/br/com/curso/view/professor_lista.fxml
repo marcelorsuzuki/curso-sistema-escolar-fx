@@ -16,5 +16,7 @@
       </columns>
     </TableView>
     <Button id="button" fx:id="adiciona" layoutX="506.0" layoutY="320.0" onAction="#adicionaAction" text="Adiciona" />
+    <Button id="button" fx:id="apaga" layoutX="406.0" layoutY="320.0" onAction="#apagaAction" text="Apaga" />
+    
   </children>
 </AnchorPane>

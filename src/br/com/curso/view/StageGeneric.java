@@ -21,7 +21,7 @@ public class StageGeneric extends Stage {
 	private int largura;
 	private int altura;
 	
-	private ObservableList data;
+	private Object previousController;
 	
 	/**
 	 * Construtor
@@ -78,13 +78,13 @@ public class StageGeneric extends Stage {
 	}
 
 
-	public ObservableList getData() {
-		return data;
+	public Object getPreviousController() {
+		return previousController;
 	}
 
 
-	public void setData(ObservableList data) {
-		this.data = data;
+	public void setPreviousController(Object previousController) {
+		this.previousController = previousController;
 	}
 
 

@@ -49,7 +49,30 @@ public class ListaProfessorController implements Initializable {
     	StageGeneric stage = new StageGeneric("/br/com/curso/view/professor_cadastra.fxml");
     	stage.setLargura(315);
     	stage.setAltura(190);
-    	stage.setData(data);
+    	stage.setPreviousController(this);
     	stage.init();
     }
+    
+    @FXML 
+	 private void apagaAction(ActionEvent event) { 
+
+       //Seleciona a linha 
+       int selectedIndex = tabelaProfessor.getSelectionModel().getSelectedIndex(); 
+       
+       //Pega o registro 
+       Professor p = tabelaProfessor.getItems().get(selectedIndex); 
+       
+       //Apaga a linha 
+       tabelaProfessor.getItems().remove(selectedIndex); 
+       System.out.println(p.getNome()); 
+    }
+
+	public ObservableList<Professor> getData() {
+		return data;
+	}
+
+	public void setData(ObservableList<Professor> data) {
+		this.data = data;
+	} 	    
+    
 }
