@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="181.0" prefWidth="313.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.curso.mb.AlunoCadastroController">
+  <children>
+    <TextField fx:id="nome" layoutX="100.0" layoutY="25.0" prefWidth="200.0" promptText="Nome aluno" />
+    <TextField id="disciplina" fx:id="ra" layoutX="100.0" layoutY="52.0" prefWidth="200.0" promptText="R.A" text="" />
+    <Button fx:id="cadastrar" layoutX="214.0" layoutY="141.0" mnemonicParsing="false" onAction="#cadastrarAction" text="Cadastrar" />
+  </children>
+</AnchorPane>

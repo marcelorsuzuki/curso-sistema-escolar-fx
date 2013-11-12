@@ -39,6 +39,11 @@ public class Login extends Application {
 		}
 	}
 
+	/**
+	 * Main do programa
+	 * 
+	 * @param args Argumentos da linha de comando
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
